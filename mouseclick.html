@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#m1').click(function(){
+                $('#m1').css('background-color','red');
+            });
+            $('#m1').dblclick(function(){
+                $('#m1').css('background-color','pink');
+            });
+            $('#m1').contextmenu(function(){
+                $('#m1').css('background-color','grey');
+            });
+            $('#m1').hover(function(){
+                $('#m1').css('background-color','orange');
+            });
+            $('#m1').mouseleave(function(){
+                $('#m1').css('background-color','green');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="m1" style="height: auto; width: 100px; background-color: skyblue;">
+        <h1>loream</h1>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit consectetur aliquam deleniti consequuntur corporis reiciendis accusamus. Sapiente iste saepe atque dolores illum animi illo excepturi at voluptatem quas, ab laudantium?
+
+    </div>
+</body>
+</html>
