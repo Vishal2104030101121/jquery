@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus event</title>
+    <script src="jquery.js"></script>
+    <Script>
+        $(document).ready(function(){
+            $('input').focus(function(){
+                $(this).css('background-color','lightgreen')
+            })
+            $('#sform').submit(function(){
+                var a = $('.name').val();
+                var b = $('.class').val();
+                var c = $('.country').val();
+                alert("name:"+ a +" class:"+ b +" country:"+ c);
+            })
+        })
+    </Script>
+    
+</head>
+<body>
+    <form id="sform" action="">
+    <div id="main" style="border: 2px solid black; text-align: center; ">
+        Name: <input class="name" type="text" placeholder="Enter your full name "> <br>
+        Class: <input class="class" type="number" placeholder="Enter your class"> <br>
+        Country <select class="country" name="country" id="" aria-placeholder="select your country">
+            <option value="india">india</option>
+            <option value="china">china</option>
+            <option value="us">us</option>
+            <option value="uk">uk</option>
+        </select> <br>
+        <button>submit</button>
+    </div>
+</form>
+</body>
+</html>
