@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keypress</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').keypress(function(){
+                $(this).css('background-color','green')
+            })
+            
+        })
+    </script>
+</head>
+<body>
+    <div style="height:auto ; width: auto; background-color: red;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus provident repellat explicabo nihil beatae autem, vel voluptates, neque minus dicta est voluptatum consequatur libero harum aperiam impedit blanditiis laboriosam numquam.
+
+    </div>
+    press any key to change background-color
+    
+</body>
+</html>
