@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add class</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .d1{
+            background-color: green;
+        }
+        .d2{
+            background-color: pink;
+        }
+    </style>
+    
+</head>
+<body>
+    <div  id="a1" style=" width: auto; height: auto;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt quaerat adipisci explicabo quia voluptatem sequi, rem vero vitae dignissimos voluptatum doloribus alias repellendus, unde velit sed exercitationem aut nesciunt, enim et laudantium at sunt officia. Repellat explicabo sint beatae voluptate sapiente iusto! Labore, recusandae. Alias odio saepe dolorum inventore ad exercitationem dolore, voluptatibus aspernatur, voluptas velit soluta, repellat laudantium aliquam eius quasi laborum incidunt quae expedita? Sint est, quas soluta quod nihil quis voluptates aliquam aut accusamus praesentium vel nisi reiciendis necessitatibus dolore veritatis eveniet reprehenderit nostrum perspiciatis iure quasi sunt labore. Enim ullam earum, fugit quis id commodi soluta eaque odit numquam, nesciunt recusandae quae sint quos cumque deserunt ducimus tenetur maxime sed, illo neque! Repudiandae alias quidem voluptatum enim repellendus? Enim saepe repudiandae, totam in, architecto odio suscipit illum fugiat nam cumque, ipsam sint. Culpa inventore asperiores perferendis corporis ratione ad, facilis voluptatem vel architecto aperiam 
+    </div>
+    <button id="add">add class</button>
+    <button id="remove">remove class</button>
+    <button id="toggle"> toggle class</button>
+    <script src="jquery.js"></script>
+    <script>
+         $('#add').click(function(){
+            $('#a1').addClass("d1 d2")
+         });    
+         $('#remove').click(function(){
+            $('#a1').removeClass("d1 d2")
+         });   
+         $('#toggle').click(function(){
+            $('#a1').toggleClass("d1 d2")
+         });      
+       
+    </script>
+</body>
+</html>
